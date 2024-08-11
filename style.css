@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+.container {
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+.image-container {
+    width: 70%; 
+    min-width: 300px; 
+    padding: 50px;
+}
+.sign-up:hover{
+    color:blue;
+}
+.image-container img {
+    width: 70%;
+    height: auto; 
+    object-fit: fill;
+}
+.login-container {
+     
+    margin-top: 30px;
+    margin-right: 10px;
+    min-width: 200px; 
+    padding: 20px;
+    background-color: #f3f2f2;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(109, 64, 5);
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: rgb(10, 134, 241);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input[type="email"],
+input[type="password"] {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius:20px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+.forgot-password {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+.forgot-password:hover {
+    color: #007bff;
+}
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+.social-icons a {
+    color: #333;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #007bff;
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column; 
+    }
+    .image-container{
+        width: auto;
+    }
+    .login-container{
+        width: 80%;
+        position: relative;
+        left: 30px;
+    }
+}
